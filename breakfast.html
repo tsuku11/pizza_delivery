@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Доставка Пиццы</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="images/logo.jpg" alt="Логотип" class="logo">
+            <div class="delivery-info">
+                <span>Доставка пиццы <span class="city">Вологда</span></span>
+                <span class="delivery-time">Время доставки <span class="red-dot">•</span> от 31 мин</span>
+            </div>
+        </div>
+        <div class="cart-container">
+            <button class="cart-button">
+                <span>Корзина</span>
+                <span class="cart-count">1</span>
+            </button>
+        </div>
+    </header>
+    
+    <div id="transition"></div>
+    <nav class="nav">
+        <ul>
+            <li><a href="/index.html" class="page-link">Пицца</a></li>
+            <li><a href="/snacks.html" class="page-link">Закуски</a></li>
+            <li><a href="/breakfast.html" class="page-link">Завтрак</a></li>
+            <li><a href="#">Салаты</a></li>
+            <li><a href="#">Напитки</a></li>
+            <li><a href="#">Десерты</a></li>
+            <li><a href="#">Бакалея</a></li>
+            <li><a href="/promo.html">Акции</a></li>
+            <li><a href="#">Комбо</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="login-button">Войти</button>
+    </nav>
+    
+    <main>
+        <section class="section">
+            <h2 style="color: #f7d22d;">Закуски</h2>
+            <div class="cards-container">
+                <div class="card"
+                    data-name="Омлет с беконом" 
+                    data-composition="Классическое сочетание горячего омлета с поджаристой корочкой и бекона с добавлением моцареллы и томатов на завтрак"
+                    data-small-price="190">
+                    <img src="images/omletsbekonom.jpg" alt="Омлет с беконом">
+                    <h3>Омлет с беконом</h3>
+                    <p class="description">Классическое сочетание горячего омлета с поджаристой корочкой и бекона с добавлением моцареллы и томатов на завтрак</p>
+                    <div class="card-footer">
+                        <p class="price">от 190 ₽</p>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="card"
+                    data-name="Омлет Пепперони" 
+                    data-composition="Феттуччине, креветки, трюфельное масло, пармезан, черный перец"
+                    data-small-price="199">
+                    <img src="images/omletpepperoni.jpg" alt="Омлет Пепперони">
+                    <h3>Омлет Пепперони</h3>
+                    <p class="description">Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                    <div class="card-footer">
+                        <p class="price">от 199 ₽</p>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="card"
+                    data-name="Омлет Сырный" 
+                    data-composition="Феттуччине, креветки, трюфельное масло, пармезан, черный перец"
+                    data-small-price="190">
+                    <img src="images/omletsirniy.jpg" alt="Омлет Сырный">
+                    <h3>Омлет Сырный</h3>
+                    <p class="description">Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                    <div class="card-footer">
+                        <p class="price">от 190 ₽</p>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="card"
+                    data-name="Омлет Ветчина и Грибы" 
+                    data-composition="Феттуччине, креветки, трюфельное масло, пармезан, черный перец"
+                    data-small-price="189">
+                    <img src="images/omletvetchinagribi.jpg" alt="Омлет Ветчина и Грибы">
+                    <h3>Омлет Ветчина и Грибы</h3>
+                    <p class="description">Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                    <div class="card-footer">
+                        <p class="price">от 189 ₽</p>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="card"
+                    data-name="Сырники" 
+                    data-composition="Феттуччине, креветки, трюфельное масло, пармезан, черный перец"
+                    data-small-price="180">
+                    <img src="images/sirniki.jpg" alt="Сырники">
+                    <h3>Сырники</h3>
+                    <p class="description">Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                    <div class="card-footer">
+                        <p class="price">от 180 ₽</p>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="card"
+                    data-name="Сырники с Малиновым вареньем" 
+                    data-composition="Феттуччине, креветки, трюфельное масло, пармезан, черный перец"
+                    data-small-price="289">
+                    <img src="images/sirnikismalinovim.jpg" alt="Сырники с Малиновым вареньем">
+                    <h3>Сырники с Малиновым вареньем</h3>
+                    <p class="description">Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                    <div class="card-footer">
+                        <p class="price">от 219 ₽</p>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="card"
+                    data-name="Сырники со Сгущенным молоком" 
+                    data-composition="Феттуччине, креветки, трюфельное масло, пармезан, черный перец"
+                    data-small-price="215">
+                    <img src="images/sirnikisosgusch.jpg" alt="Сырники со Сгущенным молоком">
+                    <h3>Сырники со Сгущенным молоком</h3>
+                    <p class="description">Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                    <div class="card-footer">
+                        <p class="price">от 215 ₽</p>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="card"
+                    data-name="Додстер с Ветчиной" 
+                    data-composition="Феттуччине, креветки, трюфельное масло, пармезан, черный перец"
+                    data-small-price="260">
+                    <img src="images/dodstervetchina.jpg" alt="Додстер с Ветчиной">
+                    <h3>Додстер с Ветчиной</h3>
+                    <p class="description">Домашняя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350 г</p>
+                    <div class="card-footer">
+                        <p class="price">от 260 ₽</p>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+            <div id="pizzaModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-left">
+                            <img id="modalImage" src="" alt="Pizza Image">
+                        </div>
+                        <div class="modal-right">
+                            <h2 id="modalName"></h2>
+                            <p id="modalComposition" class="composition"></p>
+                            <p id="modalDescription"></p>
+                            <div class="size-selection">
+                                <input type="radio" id="size-small" name="size" value="small" checked>
+                                <label for="size-small">
+                                    Стандартная порция
+                                    <span class="size-price" id="smallPrice">400 ₽</span>
+                                </label>
+                            </div>
+                            <p class="price-modal"><span id="modalPrice">400 ₽</span></p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="delivery-payment">
+                <h2>Доставка и оплата в Вологде</h2>
+                <div class="delivery-details">
+                    <div class="delivery-left">
+                        <p><strong style="color: orange;">60 МИНУТ ИЛИ ПИЦЦА БЕСПЛАТНО</strong></p>
+                        <p>Если не успеем доставить за 60 минут, вы получите извинительную пиццу. Её можно будет добавить в один из следующих заказов.</p>
+                        <p>Все цены в меню указаны без учета скидок.</p>
+                    </div>
+                    <div class="delivery-right">
+                        <p><strong style="color: orange;">От 649 ₽</strong></p>
+                        <p>Минимальная сумма доставки</p>
+                        <p><strong style="color: orange;">7 000 ₽</strong></p>
+                        <p>Максимальная сумма при оплате наличными</p>
+                        <p>Изображения продуктов могут отличаться от продуктов в заказе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer>
+        const modal = document.getElementById('pizzaModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalName = document.getElementById('modalName');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalComposition = document.getElementById('modalComposition');
+        const modalPrice = document.getElementById('modalPrice');
+        const closeModal = document.querySelector('.close');
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                const name = card.getAttribute('data-name');
+                const description = card.getAttribute('data-description');
+                const composition = card.getAttribute('data-composition');
+                const smallPrice = card.getAttribute('data-small-price');
+                const image = card.querySelector('img').src;
+        
+                modalName.textContent = name;
+                modalDescription.textContent = description;
+                modalComposition.textContent = `${composition}`;
+                document.getElementById('smallPrice').textContent = `${smallPrice} ₽`;
+                modalPrice.textContent = `${smallPrice} ₽`;
+                modalImage.src = image;
+        
+                modal.classList.add('show');
+
+                document.querySelectorAll('input[name="size"]').forEach(input => {
+                    input.addEventListener('change', event => {
+                        const size = event.target.value;
+                        if (size === 'small') modalPrice.textContent = `${smallPrice} ₽`;
+                    });
+                });
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('show');
+        });
+
+        window.addEventListener('click', event => {
+            if (event.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+        
+        document.querySelectorAll('input[name="size"]').forEach(input => {
+            input.addEventListener('change', event => {
+                const size = event.target.value;
+                if (size === 'small') modalPrice.textContent = `${smallPrice} ₽`;
+            });
+        });
+
+        document.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault(); // Prevent immediate navigation
+                const href = link.getAttribute('href');
+                const transition = document.getElementById('transition');
+
+                // Start transition
+                transition.classList.add('active');
+
+                // Navigate after transition ends
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 300); // Match CSS transition duration
+            });
+        });
+        </script>
+</body>
+</html>
+

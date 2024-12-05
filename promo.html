@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <style>
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjust card size dynamically */
+            gap: 10px; /* Reduce spacing between cards */
+            justify-items: center; /* Center cards horizontally */
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px; /* Ensure proper padding inside cards */
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: auto; /* Allow dynamic height */
+            width: 100%; /* Ensure full width in grid layout */
+            max-width: 351px; /* Limit maximum card width */
+            margin: 0; /* Remove any extra margin */
+        }
+
+        .card img {
+            width: 100%;
+            max-height: 250px; /* Increase image height */
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 22px; /* Increase font size */
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 16px; /* Slightly larger font for readability */
+            color: #666;
+            margin-bottom: 20px;
+            text-align: left; /* Keep text aligned to the left */
+        }
+
+        .card-footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: center; /* Center the button */
+            width: 100%;
+        }
+
+        .add-to-cart {
+            background: #f7d22d;
+            color: white;
+            padding: 15px 25px; /* Larger button size */
+            border: none;
+            border-radius: 8px;
+            font-size: 16px; /* Increase button text size */
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background: #e6bc20;
+        }
+    </style>
+    <title>Доставка Пиццы</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="images/logo.jpg" alt="Логотип" class="logo">
+            <div class="delivery-info">
+                <span>Доставка пиццы <span class="city">Вологда</span></span>
+                <span class="delivery-time">Время доставки <span class="red-dot">•</span> от 31 мин</span>
+            </div>
+        </div>
+        <div class="cart-container">
+            <button class="cart-button">
+                <span>Корзина</span>
+                <span class="cart-count">1</span>
+            </button>
+        </div>
+    </header>
+
+    <div id="transition"></div>
+    <nav class="nav">
+        <ul>
+            <li><a href="/index.html" class="page-link">Пицца</a></li>
+            <li><a href="/snacks.html" class="page-link">Закуски</a></li>
+            <li><a href="/breakfast.html" class="page-link">Завтрак</a></li>
+            <li><a href="#">Салаты</a></li>
+            <li><a href="#">Напитки</a></li>
+            <li><a href="#">Десерты</a></li>
+            <li><a href="#">Бакалея</a></li>
+            <li><a href="/promo.html">Акции</a></li>
+            <li><a href="#">Комбо</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="login-button">Войти</button>
+    </nav>
+    
+    <main>
+        <section class="section">
+            <h2 class="section-title" style="color: #f7d22d;">Акции</h2>
+            <div class="cards-container">
+                <!-- First Promotion -->
+                <div class="card">
+                    <img src="images/promo1.jpeg" alt="Вкусный кешбэк">
+                    <h3>Ну всё, кешбэк!</h3>
+                    <p class="description">Делайте заказы и получайте 5% фибокоинами. Меняйте фибокоины на еду и напитки в мобильном приложении за 1 ₽.</p>
+
+                </div>
+                <!-- Third Promotion -->
+                <div class="card">
+                    <img src="images/promo2.jpeg" alt="Электронные чеки вместо бумажных">
+                    <h3>Электронные чеки вместо бумажных</h3>
+                    <p class="description">Вместо бумажных чеков теперь электронные. Посмотрите их можно на сайте в истории заказов. А если хотите получать чеки на электронную почту, укажите адрес в профиле.</p>
+                    <div class="card-footer">
+
+                    </div>
+                </div>
+                <!-- Fourth Promotion -->
+                <div class="card">
+                    <img src="images/promo3.jpeg" alt="1 ₽ с каждого напитка — на благотворительность">
+                    <h3>1 ₽ с каждого напитка — на благотворительность</h3>
+                    <p class="description">Покупая горячий напиток, вы становитесь участником благотворительной акции и помогаете фонду «Старшие братья Старшие сестры». Подробнее об акции вы можете прочитать на сайте.</p>
+                    <div class="card-footer">
+                        <button class="add-to-cart">Посмотреть</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="delivery-payment">
+                <h2>Доставка и оплата в Вологде</h2>
+                <div class="delivery-details">
+                    <div class="delivery-left">
+                        <p><strong style="color: orange;">60 МИНУТ ИЛИ ПИЦЦА БЕСПЛАТНО</strong></p>
+                        <p>Если не успеем доставить за 60 минут, вы получите извинительную пиццу. Её можно будет добавить в один из следующих заказов.</p>
+                        <p>Все цены в меню указаны без учета скидок.</p>
+                    </div>
+                    <div class="delivery-right">
+                        <p><strong style="color: orange;">От 649 ₽</strong></p>
+                        <p>Минимальная сумма доставки</p>
+                        <p><strong style="color: orange;">7 000 ₽</strong></p>
+                        <p>Максимальная сумма при оплате наличными</p>
+                        <p>Изображения продуктов могут отличаться от продуктов в заказе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
